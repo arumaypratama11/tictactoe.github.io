@@ -1,0 +1,168 @@
+body {
+  width: 100%;
+  height: auto;
+  background-color: rgb(247, 247, 78);
+}
+#ket {
+  margin-top: -520px;
+  margin-left: 610px;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#kotak {
+  border: solid 2px black;
+  border-radius: 10px;
+  width: 450px;
+  height: 450px;
+  margin-left: 450px;
+  margin-top: 100px;
+  background-color: rgb(100, 98, 98);
+}
+#tombol {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  float: left;
+}
+.depan {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  border: solid 1px #000;
+  backface-visibility: hidden;
+  transition: transform 1s linear 0s;
+  background-color: brown;
+}
+.belakang {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  border: solid 1px #000;
+  backface-visibility: hidden;
+  transition: transform 1s linear 0s;
+  font-size: 70px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  #kotak {
+    margin-left: 300px;
+    margin-top: 200px;
+  }
+  #ket {
+    margin-left: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #kotak {
+    margin-top: 300px;
+    margin-left: 150px;
+  }
+  #ket {
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #kotak {
+    margin-left: 40px;
+    margin-top: 130px;
+  }
+  #ket {
+    margin-left: 199px;
+  }
+}
+@media screen and (max-width: 414px) {
+  #kotak {
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: 200px;
+  }
+  #tombol {
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+  .depan {
+    width: 100px;
+    height: 100px;
+  }
+  .belakang {
+    width: 100px;
+    height: 100px;
+  }
+  #ket {
+    margin-left: 130px;
+    margin-top: -400px;
+  }
+}
+@media screen and (max-width: 411px) {
+  #kotak {
+    margin-left: 45px;
+    margin-top: 200px;
+    width: 300px;
+    height: 300px;
+  }
+  #tombol {
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+  .depan {
+    width: 100px;
+    height: 100px;
+  }
+  .belakang {
+    width: 100px;
+    height: 100px;
+  }
+  #ket {
+    margin-left: 130px;
+    margin-top: -400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #kotak {
+    margin-left: 30px;
+  }
+  #ket {
+    margin-left: 110px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #kotak {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 280px) {
+  #kotak {
+    margin-left: 40px;
+    margin-top: 200px;
+    width: 180px;
+    height: 180px;
+  }
+  #tombol {
+    width: 60px;
+    height: 60px;
+    float: left;
+  }
+  .depan {
+    width: 60px;
+    height: 60px;
+  }
+  .belakang {
+    width: 95px;
+    height: 95px;
+  }
+  #ket {
+    margin-left: 75px;
+    margin-top: -270px;
+    font-size: 40px;
+  }
+}
